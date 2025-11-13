@@ -1,0 +1,228 @@
+body {
+    background-color: #0e0764;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0e0764;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.Logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+
+.search-box {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 1600px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.search-box input:focus {
+    outline: 3px solid #ffffff;
+}
+
+.IMGLUPA {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.IMGLUPA:hover {
+    transform: scale(1.1);
+}
+
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.usuário, .Carrinho {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff30;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.usuário:hover, .Carrinho:hover {
+    transform: scale(1.05);
+}
+
+.IMGUSUARIO, .IMGCARRINHO {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.Banner {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1600px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.produto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.produto img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 10px auto;
+}
+
+.produto h5 {
+    color: #0e0764;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #0e0764;
+    color: #ffffff;
+    padding: 25px 10px;
+    font-size: 16px;
+    margin-top: 40px;
+    border-top: 2px solid #ffffff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.produto, .Banner {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+@media (max-width: 992px) {
+    .search-box input {
+        max-width: 600px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .Logo {
+        width: 75px;
+        height: 75px;
+    }
+    .usuário, .Carrinho {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .search-box input {
+        width: 90%;
+        max-width: none;
+    }
+    .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo {
+        width: 60px;
+        height: 60px;
+    }
+    .usuário, .Carrinho {
+        width: 55px;
+        height: 55px;
+    }
+    .search-box input {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+   .Compra {
+    border-color: chartreuse;
+    color:black;
+    background-color:chartreuse;
+    font-size: 10px;
+}
+  .Login {
+    color: white;
+      }
+      .mb-0 {
+        color: white;
+      }
+  .Cadastro {
+   color: white;
+      }
